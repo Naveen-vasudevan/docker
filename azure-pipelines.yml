@@ -7,9 +7,9 @@ trigger:
 - master
 
 pool:
-  name: "TEST"
-  vmImage: "AWSERVER"
-
+ name: "TEST"
+ vmImage: "AWSERVER"
+ 
 - task: SSH@0
   inputs:
     runOptions: 'script'
