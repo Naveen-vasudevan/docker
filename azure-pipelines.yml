@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: "TEST" 
+  name: "Default" 
   vmImage: "AWSERVER"
 
 steps:
