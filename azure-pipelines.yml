@@ -11,7 +11,7 @@ pool:
   vmImage: "AWSERVER"
 
 steps:
-- script: echo Hello, world!
+- script: bash.sh
   displayName: 'Run a one-line script'
 
 - script: |
