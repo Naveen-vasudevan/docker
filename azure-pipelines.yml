@@ -1,9 +1,4 @@
 # Starter pipeline
-- task: SSH@0
-  inputs:
-    runOptions: 'script'
-    scriptPath: 'docker/bash.sh'
-    readyTimeout: '20000'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -14,6 +9,12 @@ trigger:
 pool:
   name: "TEST"
   vmImage: "AWSERVER"
+
+- task: SSH@0
+  inputs:
+    runOptions: 'script'
+    scriptPath: 'docker/bash.sh'
+    readyTimeout: '20000'
 
 steps:
 - script: echo Hello, world!
